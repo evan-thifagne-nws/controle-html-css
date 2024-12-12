@@ -242,6 +242,7 @@ nav {
 .community-card p {
   text-align: center;
 }
+/*Main*/
 
 .main {
   padding-inline: 144px;
@@ -277,6 +278,8 @@ nav {
   gap: 32px;
 }
 
+/*Contact*/
+
 .contact {
   padding-inline: 120px;
   padding-bottom: 50px;
@@ -299,6 +302,8 @@ nav {
   margin: auto;
 }
 
+/*Footer*/
+
 footer {
   background-color: var(--color-black);
   padding: 64px;
@@ -308,6 +313,13 @@ footer {
 
 footer p {
   color: var(--color-silver);
+}
+
+/* Button hover */
+
+.hero-button:hover,
+.button-signup:hover {
+  background-color: var(--color-s2);
 }
 
 /* Text */
