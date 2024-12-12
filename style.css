@@ -94,7 +94,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
 }
 
 h3 {
@@ -165,6 +165,7 @@ nav {
 .hero {
   background-color: var(--color-silver);
   display: flex;
+  align-items: center;
   padding: 96px;
   padding-inline: 144px;
   gap: 104px;
@@ -205,29 +206,108 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  margin-inline: 270px;
+  margin-bottom: 16px;
   gap: 8px;
 }
 
+/*Card*/
+
+.card-carrousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .community-card {
-  height: 260px;
-  width: 299px;
+  width: 300px;
   padding: 24px;
   box-shadow: 0px 2px 4px 0px #abbed133;
   border-radius: 8px;
 }
 
-.card-image {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+.community-card img {
+  display: block;
+  margin-inline: auto;
+  margin-bottom: 16px;
 }
 
-.card-content {
+.community-card h3 {
+  margin-inline: 30px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.community-card p {
+  text-align: center;
+}
+
+.main {
+  padding-inline: 144px;
+}
+
+.container {
+  display: grid;
+}
+
+.container-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding-inline: 144px;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.container-content {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding-right: 60px;
+}
+
+.container-section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contact {
+  padding-inline: 120px;
+  padding-bottom: 50px;
+}
+
+.contact-container {
+  padding: 64px;
+  padding-inline: 160px;
+  background-color: var(--color-silver);
+  gap: 32px;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   text-align: center;
+}
+.contact-content .hero-button {
+  margin: auto;
+}
+
+footer {
+  background-color: var(--color-black);
+  padding: 64px;
+  padding-inline: 440px;
+  text-align: center;
+}
+
+footer p {
+  color: var(--color-silver);
 }
 
 /* Text */
