@@ -1,36 +1,12 @@
 :root {
-  /* Neutral */
+  /* Colors */
   --color-black: #263238;
-  --color-dark-grey: #4d4d4d;
   --color-grey: #717171;
-  --color-light-grey: #89939e;
-  --color-grey-blue: #abbed1;
   --color-silver: #f5f7fa;
   --colo-white: #ffffff;
-
-  /*Primary*/
   --color-primary: #4caf4f;
-  --color-secondary: #263238;
-  --color-info: #2194f3;
-
-  /*Shades*/
-  --color-s1: #43a046;
-  --color-s2: #388e3b;
-  --color-s3: #237d31;
-  --color-s4: #1b5e1f;
-  --color-s5: #103e13;
-
-  /*Tint*/
-  --color-t1: #66bb69;
-  --color-t2: #81c784;
-  --color-t3: #a5d6a7;
-  --color-t4: #c8e6c9;
-  --color-t5: #e8f5e9;
-
-  /*Action*/
-  --color-warning: #fbc02d;
-  --color-error: #e53835;
-  --color-success: #2e7d31;
+  --color-secondary: #388e3b;
+  --color-footer: #263238;
 
   /*Fonts*/
   --font-family: "Inter", sans-serif;
@@ -66,6 +42,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -124,6 +101,8 @@ svg {
 /*Header*/
 
 header {
+  position: sticky;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -137,6 +116,10 @@ nav {
   display: flex;
   flex-direction: row;
   gap: 50px;
+}
+
+nav a:hover {
+  color: var(--color-secondary);
 }
 
 .header-button {
@@ -305,7 +288,7 @@ nav {
 /*Footer*/
 
 footer {
-  background-color: var(--color-black);
+  background-color: var(--color-footer);
   padding: 64px;
   padding-inline: 440px;
   text-align: center;
@@ -319,7 +302,7 @@ footer p {
 
 .hero-button:hover,
 .button-signup:hover {
-  background-color: var(--color-s2);
+  background-color: var(--color-secondary);
 }
 
 /* Text */
